@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&display=swap');    /* import Poppins font*/
+
+/*////////////////////////////////////////////////////////////////////////
+Table of Contents:
+    1. Global Styles
+    2. Typografie
+    3. Areas
+        3.1 Header
+        3.2 Testimonial
+        3.3 Support
+        3.4 Faq
+        3.5 Footer
+ */
+
+
+
+
+
+/*////////////////////////
+    1. Global Styles
+////////////////////////*/
+/*colorcodes*/
+/*kleurcode donkergroen #1C2B32 */
+/*grijs #899CA0  */
+
+/*test border*/
+/*border-style: dashed;*/
+/*border-color: red;*/
+
+/*CSS reset*/
+* { padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+/*////////////////////////
+    2. Typography
+////////////////////////*/
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;/* in Chrome on MacOS the font smoothing is on per default and it makes text too blurry. So here it is turned off */
+    /*color: #1C2B32;*/
+    background-color: white;
+}
+
+h1 { font-size: 76px;
+    font-weight: 700;
+}
+h3 {
+    font-weight: 600;
+}
+
+p{
+    font-size: 14px;
+    font-weight: lighter;
+}
+a {
+    color: grey;
+}
+
+a:hover{
+    text-decoration: none
+}
+
+/*////////////////////////
+    3. Areas
+////////////////////////*/
+
+/*///////////// 3.1 Header /////////////*/
+
+.domain-check {
+    background-image: url(../assets/images/mountains.jpg);
+    background-size: 100%;
+    background-position: top;
+    color: #1C2B32;
+    max-width: 1000px;
+    text-align: center;
+    padding: 20px 20px 250px;
+}
+
+.domain-check h1{
+    padding-top: 40px;
+}
+
+.domain-check p{
+    margin-bottom: 25px;
+}
+
+.domain-check input, button {
+    box-sizing: content-box;
+    border-style: solid;
+    border-color: #1C2B32;
+    padding: 5px;
+    height: 40px;
+}
+
+.domain-check input{
+    width:240px;
+    color: #1C2B32;
+    padding-left: 30px;
+    border-radius: 27px 0 0 27px;
+    background: transparent;
+}
+
+.domain-check button{
+    background-color: #1C2B32;
+    color: white;
+    width:180px;
+    margin-left: -5px;
+    border-radius: 0 27px 27px 0;
+
+}
+.domain-check input::placeholder{
+    color: #1C2B32;
+}
+
+
+/*//////////// 3.2 Main part of the page//////////*/
+.main {
+    max-width: 1000px;
+}
+
+.main h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.main section {
+    margin-left: 5%;
+    margin-right: 5%;
+    /*border-style: dashed;*/
+    /*border-color: red;*/
+}
+
+/*///////////// 3.2.1 Testimonial /////////////*/
+.testimonials article{
+    /*border-style: dotted;*/
+    /*border-color: red;*/
+    width: 100%;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+    border-radius: 10px;
+    padding: 20px 40px 40px 20px;
+    margin: 40px;
+}
+
+/*todo include quotationmark image inside the blockquotes */
+/*.testimonials blockquote{*/
+/*    position:relative;*/
+/*}*/
+
+.author img{
+    vertical-align: middle;
+    /*border-style: dotted;*/
+    /*border-color: green;*/
+    padding-top: 10px;
+}
+
+.author em{
+    font-weight: lighter;
+    display: inline-block;
+    vertical-align: middle;
+    text-indent: 20px;
+}
+
+
+
+
+/*///////////// 3.2.2 Support /////////////*/
+.contact-us img {
+    width:100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-us button {
+    background-color: #1C2B32;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    border-radius: 27px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*///////////// 3.2.3 Faq /////////////*/
+.faq details{
+    font-weight: lighter;
+    padding:24px 0 0 24px;
+}
+
+.faq details>p{
+    color:white;
+    background-color: #899CA0;
+    font-weight: normal;
+    border-radius: 10px;
+    padding:20px;
+    margin-top: 10px;
+}
+/* mouse cursor changes into hand shaped pointer when hovering over an FAQ */
+.faq details:hover {
+    cursor:pointer;
+}
+/*///////////// 3.3 Footer ////////////*/
+.page-footer{
+    max-width: 1000px;
+    color:white;
+    background-color: #1C2B32;
+    text-align: center;
+    padding: 20px;
+}
